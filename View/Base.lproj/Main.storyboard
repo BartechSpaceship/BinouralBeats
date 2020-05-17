@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bp1-sc-Yka">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Library-->
+        <scene sceneID="Dfd-cU-O5s">
+            <objects>
+                <viewController id="IeI-8X-ntF" customClass="LibraryViewController" customModule="BinouralBeats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Qg-tc-ofM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8Tt-bj-U4R"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Library" id="b61-4Y-xrT">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="qrk-OY-Ggw">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bS-f9-KDk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8273.9130434782619" y="133.92857142857142"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="bbR-1J-aZC">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="vMp-HH-VTn" customClass="HomeViewController" customModule="BinouralBeats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6fA-CW-FIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jTy-CS-afJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3mF-ah-iZv">
+                                    <size key="itemSize" width="380" height="200"/>
+                                    <size key="estimatedItemSize" width="380" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="11" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="cell" id="fIm-ST-Vn4" customClass="CollectionViewCell" customModule="BinouralBeats" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="11" width="380" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cBv-je-K3g">
+                                            <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="4Bs-3l-qbG">
+                                                    <rect key="frame" x="1" y="1" width="378" height="111"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zD-nG-5eF">
+                                                    <rect key="frame" x="8" y="120" width="364" height="31.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Labeldskjbdskbdskjfdskfdkfndkjsfkjdsfjksdfjds dsadasd " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYV-bj-bNR">
+                                                    <rect key="frame" x="8" y="159.5" width="364" height="38.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="380" height="200"/>
+                                        <connections>
+                                            <outlet property="binouralDiscription" destination="vYV-bj-bNR" id="g5X-ZB-CbX"/>
+                                            <outlet property="binouralImage" destination="4Bs-3l-qbG" id="qfS-kr-TwN"/>
+                                            <outlet property="binouralName" destination="2zD-nG-5eF" id="lLO-a2-Y7X"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vMp-HH-VTn" id="CHD-ng-h6r"/>
+                                    <outlet property="delegate" destination="vMp-HH-VTn" id="c5e-fR-aKd"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jTy-CS-afJ" firstAttribute="bottom" secondItem="uXf-Ya-fry" secondAttribute="bottom" id="30x-KN-4H8"/>
+                            <constraint firstItem="jTy-CS-afJ" firstAttribute="leading" secondItem="uXf-Ya-fry" secondAttribute="leading" id="4gY-sH-yF6"/>
+                            <constraint firstItem="jTy-CS-afJ" firstAttribute="top" secondItem="uXf-Ya-fry" secondAttribute="top" id="Rpu-Dn-8wa"/>
+                            <constraint firstItem="jTy-CS-afJ" firstAttribute="trailing" secondItem="uXf-Ya-fry" secondAttribute="trailing" id="V4N-nd-yq1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uXf-Ya-fry"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="sH4-4U-mC8"/>
+                    <navigationItem key="navigationItem" title="Home" id="bRm-RV-C7O">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="NIm-y0-A1B">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="jTy-CS-afJ" id="pK1-SC-gt3"/>
+                        <segue destination="Pkl-9H-gBK" kind="show" identifier="StudyController" id="1H9-J7-GyQ"/>
+                        <segue destination="G3L-HE-I2z" kind="show" identifier="SpiritController" id="i5D-H2-fQs"/>
+                        <segue destination="Cjd-hu-F3h" kind="show" identifier="SleepController" id="Hfc-9R-ced"/>
+                        <segue destination="DgV-NT-saR" kind="show" identifier="BodyController" id="Mte-6z-7B7"/>
+                        <segue destination="j92-1a-tHi" kind="show" identifier="BrainController" id="xEX-TQ-uu6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="num-NO-awe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8243.4782608695659" y="-517.63392857142856"/>
+        </scene>
+        <!--Study-->
+        <scene sceneID="EIf-gF-JjG">
+            <objects>
+                <viewController storyboardIdentifier="StudyController" modalPresentationStyle="fullScreen" id="Pkl-9H-gBK" customClass="StudyController" customModule="BinouralBeats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mV8-1e-IdN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SiJ-37-7W2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TnQ-zX-WSO">
+                                    <size key="itemSize" width="380" height="200"/>
+                                    <size key="estimatedItemSize" width="380" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="9oq-yF-vST" customClass="CollectionViewCellSegue" customModule="BinouralBeats" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="10" width="380" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GVH-dQ-cZd">
+                                            <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="memory" translatesAutoresizingMaskIntoConstraints="NO" id="A08-Ph-FZ2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.5" green="0.046601542070000002" blue="0.076277453679999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Study" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCJ-VT-9jD">
+                                                    <rect key="frame" x="8" y="60" width="364" height="31.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Increasing of memory retention functionalities" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1t5-wD-Wpx">
+                                                    <rect key="frame" x="8" y="89" width="364" height="103"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.0 Hz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TD6-zY-fLF">
+                                                    <rect key="frame" x="8" y="20" width="364" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="380" height="200"/>
+                                        <connections>
+                                            <outlet property="binouralDiscryption" destination="1t5-wD-Wpx" id="N1N-W2-r4x"/>
+                                            <outlet property="binouralImage" destination="A08-Ph-FZ2" id="QQH-Er-ZP1"/>
+                                            <outlet property="binouralName" destination="iCJ-VT-9jD" id="zdl-Q5-bgh"/>
+                                            <outlet property="binouralTitle" destination="TD6-zY-fLF" id="fz5-Hw-C6V"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Pkl-9H-gBK" id="Wxw-vm-mSe"/>
+                                    <outlet property="delegate" destination="Pkl-9H-gBK" id="cUW-jC-tbz"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iUA-qL-U1f" firstAttribute="bottom" secondItem="SiJ-37-7W2" secondAttribute="bottom" id="Nhx-tk-FyB"/>
+                            <constraint firstItem="SiJ-37-7W2" firstAttribute="top" secondItem="iUA-qL-U1f" secondAttribute="top" id="cNo-xn-0xX"/>
+                            <constraint firstItem="SiJ-37-7W2" firstAttribute="trailing" secondItem="iUA-qL-U1f" secondAttribute="trailing" id="uB9-Q5-C1H"/>
+                            <constraint firstItem="SiJ-37-7W2" firstAttribute="leading" secondItem="iUA-qL-U1f" secondAttribute="leading" id="ucb-Cc-2Mi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iUA-qL-U1f"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Study" id="mkt-ZI-j6E">
+                        <barButtonItem key="backBarButtonItem" title="None" id="0cM-wZ-wEk"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwZ-Vg-Oav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9133.3333333333339" y="-830.35714285714278"/>
+        </scene>
+        <!--Spirit-->
+        <scene sceneID="7TC-dF-qd0">
+            <objects>
+                <viewController storyboardIdentifier="SpiritController" id="G3L-HE-I2z" customClass="SpiritController" customModule="BinouralBeats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yey-j4-m8r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J2f-Fp-BCE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="S4N-q5-p0C">
+                                    <size key="itemSize" width="380" height="200"/>
+                                    <size key="estimatedItemSize" width="380" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="sSr-d0-ay0" customClass="CollectionViewCellSegue" customModule="BinouralBeats" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="10" width="380" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aUv-Ht-cj1">
+                                            <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oe6-Rc-Sio">
+                                                    <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5.5 HZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMP-6l-AnB">
+                                                    <rect key="frame" x="8" y="20" width="364" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spirit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTM-AA-qFr">
+                                                    <rect key="frame" x="8" y="60" width="364" height="31.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Associated with inner guidance, intuition, and heat generation " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ1-3K-o7n">
+                                                    <rect key="frame" x="8" y="89" width="364" height="103"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="380" height="200"/>
+                                        <connections>
+                                            <outlet property="binouralDiscryption" destination="fQ1-3K-o7n" id="h0b-Va-BOH"/>
+                                            <outlet property="binouralImage" destination="oe6-Rc-Sio" id="aeB-1p-OGY"/>
+                                            <outlet property="binouralName" destination="vTM-AA-qFr" id="m4z-1a-Edl"/>
+                                            <outlet property="binouralTitle" destination="gMP-6l-AnB" id="gAz-TE-G2Z"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="G3L-HE-I2z" id="9HF-Ul-jW7"/>
+                                    <outlet property="delegate" destination="G3L-HE-I2z" id="WYZ-r7-Hqc"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="J2f-Fp-BCE" firstAttribute="trailing" secondItem="tC1-kN-ZoO" secondAttribute="trailing" id="KUY-xO-N3n"/>
+                            <constraint firstItem="J2f-Fp-BCE" firstAttribute="bottom" secondItem="tC1-kN-ZoO" secondAttribute="bottom" id="Mzd-mX-Sbg"/>
+                            <constraint firstItem="J2f-Fp-BCE" firstAttribute="leading" secondItem="tC1-kN-ZoO" secondAttribute="leading" id="cG3-VU-odc"/>
+                            <constraint firstItem="J2f-Fp-BCE" firstAttribute="top" secondItem="tC1-kN-ZoO" secondAttribute="top" id="dgr-PZ-3T6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tC1-kN-ZoO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Spirit" id="2vr-0T-o0V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JzK-c2-GlK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9888" y="-830"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rkl-7h-bYi">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bp1-sc-Yka" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="CWr-vb-g7x">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9db-oW-t1Q" kind="relationship" relationship="viewControllers" id="JMg-0Y-FsO"/>
+                        <segue destination="O5Z-6f-si3" kind="relationship" relationship="viewControllers" id="miv-GN-KP8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ek0-Zn-0v0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5496" y="134"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Nju-WU-Pna">
+            <objects>
+                <navigationController title="Home" automaticallyAdjustsScrollViewInsets="NO" id="9db-oW-t1Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="egr-Lm-0aP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yum-aj-Qgm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="270" vertical="0.0"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vMp-HH-VTn" kind="relationship" relationship="rootViewController" id="H9y-uJ-5Sz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nDU-tC-QfW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7334.7826086956529" y="-517.63392857142856"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="esd-hK-Pmm">
+            <objects>
+                <navigationController title="Library" automaticallyAdjustsScrollViewInsets="NO" id="O5Z-6f-si3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Library" image="star" catalog="system" selectedImage="star" id="ruz-km-Lxt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tHJ-uO-FvK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="270" vertical="0.0"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IeI-8X-ntF" kind="relationship" relationship="rootViewController" id="FnT-qa-NHO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVT-ef-FnL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7363.7681159420299" y="133.92857142857142"/>
+        </scene>
+        <!--Body-->
+        <scene sceneID="OtT-lh-cdD">
+            <objects>
+                <viewController storyboardIdentifier="BodyController" id="DgV-NT-saR" customClass="BodyController" customModule="BinouralBeats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="05Z-KX-9xf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BPP-vO-87Y">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rcq-lM-FtU">
+                                    <size key="itemSize" width="380" height="200"/>
+                                    <size key="estimatedItemSize" width="380" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="6aL-vH-tvM" customClass="CollectionViewCellSegue" customModule="BinouralBeats" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="10" width="380" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uJg-21-sBh">
+                                            <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lx3-wA-Qzl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.5 Hz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RC-SA-a4D">
+                                                    <rect key="frame" x="8" y="20" width="364" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Universal Healing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMg-Rp-Rgo">
+                                                    <rect key="frame" x="8" y="60" width="364" height="31.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delta 1.5Hz is known as abrahams Universal Healing Rate and is associated with Sleep" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmC-Nx-CW7">
+                                                    <rect key="frame" x="8" y="89" width="364" height="103"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="380" height="200"/>
+                                        <connections>
+                                            <outlet property="binouralDiscryption" destination="TmC-Nx-CW7" id="5bM-Xt-oBG"/>
+                                            <outlet property="binouralImage" destination="lx3-wA-Qzl" id="BS4-rW-eKD"/>
+                                            <outlet property="binouralName" destination="CMg-Rp-Rgo" id="lQO-G2-thf"/>
+                                            <outlet property="binouralTitle" destination="2RC-SA-a4D" id="Nxe-zX-e3Y"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="DgV-NT-saR" id="znV-KF-a8b"/>
+                                    <outlet property="delegate" destination="DgV-NT-saR" id="oh4-hY-a7q"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BPP-vO-87Y" firstAttribute="top" secondItem="81p-yP-btx" secondAttribute="top" id="Axx-o7-15g"/>
+                            <constraint firstItem="BPP-vO-87Y" firstAttribute="leading" secondItem="81p-yP-btx" secondAttribute="leading" id="BKZ-gd-BpH"/>
+                            <constraint firstItem="BPP-vO-87Y" firstAttribute="bottom" secondItem="81p-yP-btx" secondAttribute="bottom" id="CEe-nU-gqX"/>
+                            <constraint firstItem="BPP-vO-87Y" firstAttribute="trailing" secondItem="81p-yP-btx" secondAttribute="trailing" id="HEx-fy-mYD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="81p-yP-btx"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Body" id="sPX-EE-yHC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fx9-mw-Oi5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11332" y="-830"/>
+        </scene>
+        <!--Brain-->
+        <scene sceneID="JbO-uX-JfQ">
+            <objects>
+                <viewController storyboardIdentifier="BrainController" id="j92-1a-tHi" customClass="BrainController" customModule="BinouralBeats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vdb-Qt-UCp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f24-g4-g5t">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uZE-tC-X9G">
+                                    <size key="itemSize" width="380" height="200"/>
+                                    <size key="estimatedItemSize" width="380" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="8wH-1n-ng6" customClass="CollectionViewCellSegue" customModule="BinouralBeats" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="10" width="380" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="53t-h7-YvE">
+                                            <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vZL-er-SQc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15.4 Hz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEm-S2-Pb8">
+                                                    <rect key="frame" x="8" y="20" width="364" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intelligence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4af-Go-Yig">
+                                                    <rect key="frame" x="8" y="60" width="364" height="31.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Associated with the cortex and has the effect of increased intelligence " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJx-Lu-QQB">
+                                                    <rect key="frame" x="8" y="89" width="364" height="103"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="380" height="200"/>
+                                        <connections>
+                                            <outlet property="binouralDiscryption" destination="KJx-Lu-QQB" id="96s-GV-haW"/>
+                                            <outlet property="binouralImage" destination="vZL-er-SQc" id="3OQ-nt-oyz"/>
+                                            <outlet property="binouralName" destination="4af-Go-Yig" id="ap0-qf-FVZ"/>
+                                            <outlet property="binouralTitle" destination="xEm-S2-Pb8" id="NPG-Yi-Tf3"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="j92-1a-tHi" id="GYN-er-vMd"/>
+                                    <outlet property="delegate" destination="j92-1a-tHi" id="mR6-1e-wzc"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f24-g4-g5t" firstAttribute="trailing" secondItem="6Bg-12-yZb" secondAttribute="trailing" id="5Rc-S4-poM"/>
+                            <constraint firstItem="f24-g4-g5t" firstAttribute="leading" secondItem="6Bg-12-yZb" secondAttribute="leading" id="C3o-yu-zHG"/>
+                            <constraint firstItem="f24-g4-g5t" firstAttribute="bottom" secondItem="6Bg-12-yZb" secondAttribute="bottom" id="Cu8-sN-2Pw"/>
+                            <constraint firstItem="f24-g4-g5t" firstAttribute="top" secondItem="6Bg-12-yZb" secondAttribute="top" id="PWO-OA-Ae3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Bg-12-yZb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Brain" id="I5m-eC-UTV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSC-y1-g7C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12078" y="-830"/>
+        </scene>
+        <!--Sleep-->
+        <scene sceneID="KI0-ov-Pv4">
+            <objects>
+                <viewController storyboardIdentifier="SleepController" id="Cjd-hu-F3h" customClass="SleepController" customModule="BinouralBeats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KlP-pT-DGw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WjR-TM-BB7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0fA-bd-64Q">
+                                    <size key="itemSize" width="380" height="200"/>
+                                    <size key="estimatedItemSize" width="380" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="frd-i2-VOa" customClass="CollectionViewCellSegue" customModule="BinouralBeats" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="10" width="380" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="p3s-OD-HTL">
+                                            <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QkV-Z8-PHl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.0 Hz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rg-N7-jeY">
+                                                    <rect key="frame" x="8" y="20" width="364" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sleep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWe-F6-bsc">
+                                                    <rect key="frame" x="8" y="60" width="364" height="31.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The natural periodic suspension of conciousness during which the powers of the body are restored" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2u-MT-e5w">
+                                                    <rect key="frame" x="8" y="89" width="364" height="103"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="380" height="200"/>
+                                        <connections>
+                                            <outlet property="binouralDiscryption" destination="C2u-MT-e5w" id="s9D-U6-NNE"/>
+                                            <outlet property="binouralImage" destination="QkV-Z8-PHl" id="cbe-FL-bJ6"/>
+                                            <outlet property="binouralName" destination="tWe-F6-bsc" id="dqw-83-KdZ"/>
+                                            <outlet property="binouralTitle" destination="7Rg-N7-jeY" id="nfw-b1-OmX"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Cjd-hu-F3h" id="qvT-Gr-5cu"/>
+                                    <outlet property="delegate" destination="Cjd-hu-F3h" id="Ash-Y2-l0I"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WjR-TM-BB7" firstAttribute="top" secondItem="VTy-IM-iJD" secondAttribute="top" id="B5K-te-BF3"/>
+                            <constraint firstItem="WjR-TM-BB7" firstAttribute="leading" secondItem="VTy-IM-iJD" secondAttribute="leading" id="Qkj-c1-sJg"/>
+                            <constraint firstItem="WjR-TM-BB7" firstAttribute="trailing" secondItem="VTy-IM-iJD" secondAttribute="trailing" id="T0Y-Kq-oBg"/>
+                            <constraint firstItem="WjR-TM-BB7" firstAttribute="bottom" secondItem="VTy-IM-iJD" secondAttribute="bottom" id="Z5h-9r-mH1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VTy-IM-iJD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sleep" id="lhm-DN-DiY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TFX-vN-3y7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10606" y="-830"/>
+        </scene>
+        <!--Binoural View Controller-->
+        <scene sceneID="sam-V9-yHg">
+            <objects>
+                <viewController storyboardIdentifier="BinouralViewController" id="kDC-28-N0D" customClass="BinouralViewController" customModule="BinouralBeats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XPQ-iZ-wkH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgH-HH-oO8">
+                                <rect key="frame" x="184" y="346" width="46" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="DESTROY:" destination="kDC-28-N0D" eventType="touchUpInside" id="YSR-uf-Urj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YFS-nU-hzd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKY-eG-Iq2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10660.869565217392" y="-36.160714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brain" width="976" height="1468"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <image name="memory" width="1632" height="1088"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
